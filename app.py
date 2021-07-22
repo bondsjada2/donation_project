@@ -6,6 +6,7 @@ from flask import request
 from flask import redirect
 import model
 from model import address
+# from model import donation
 
 # -- Initialization section --
 app = Flask(__name__)
@@ -24,6 +25,8 @@ def zip_code():
         print(zipcode)
         zip_code = address(zipcode)
         print(zip_code)
+        # good_will = donation(center)
+        # print(good_will)
         return render_template('results.html', zipcode = zipcode, zip_code = zip_code)
     else:
         return "ERROR"

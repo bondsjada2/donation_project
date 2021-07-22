@@ -1,25 +1,33 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
-h5{
-    border-style: dotted;
-    color:rgb(248, 164, 192);
+h1{
+    /* border-style: dotted; */
+    background-color:rgb(145, 251, 154);
     /* background-color: #E8D8EE;  */
-    /* font-family: "Raleway";
+    font-family: "Quicksand";
     font-size: 50px;
     padding: 20px;
     text-align: center;
 }
-p{
+h2{
     border-style: dotted;
-    font-family:"Raleway";
-    font-size: 30px; */
+    font-family:"Quicksand";
+    font-size: 40px;
+    text-align: center;
     /* text-shadow:2px 3px 3px; */
-    /* padding: 10px */
-/* }
-body{
+    padding: 10px
+h3{
+    /* border-style: dotted; */
+    font-family:"Quicksand";
+    font-size: 30px;
+    /* text-shadow:2px 3px 3px; */
+    padding: 10px
+
+/* body{
     margin: 50px;
-}
+} */
+/* 
 li{
-    font-family:"Raleway";
+    font-family:"Quicksand";
     font-size:15px;
 } */
