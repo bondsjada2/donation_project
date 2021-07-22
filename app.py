@@ -1,9 +1,11 @@
 # ---- YOUR APP STARTS HERE ----
 # -- Import section --
 from flask import Flask
-# from flask import render_template
-# from flask import request
-
+from flask import render_template
+from flask import request
+from flask import redirect
+import model
+from model import address
 
 # -- Initialization section --
 app = Flask(__name__)
@@ -13,4 +15,15 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
-    return "hello world"
+    return render_template('index.html')
+
+@app.route('/results', methods = ['GET', 'POST'])
+def zip_code():
+    if request.method == "POST":
+        zipcode = request.form["zipcode"]
+        print(zipcode)
+        zip_code = address(zipcode)
+        print(zip_code)
+        return render_template('results.html', zipcode = zipcode, zip_code = zip_code)
+    else:
+        return "ERROR"
