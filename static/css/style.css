@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+h1{
+    /* border-style: dotted; */
+    background-color:rgb(145, 251, 154);
+    /* background-color: #E8D8EE;  */
+    font-family: "Quicksand";
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+}
+h2{
+    border-style: dotted;
+    font-family:"Quicksand";
+    font-size: 40px;
+    text-align: center;
+    /* text-shadow:2px 3px 3px; */
+    padding: 10px
+h3{
+    /* border-style: dotted; */
+    font-family:"Quicksand";
+    font-size: 30px;
+    /* text-shadow:2px 3px 3px; */
+    padding: 30px;
+    text-align: center;
+div{
+    text-align: center;
+}
+li{
+    font-family:"Quicksand";
+    font-size:30px;
+}
