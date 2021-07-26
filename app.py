@@ -3,7 +3,7 @@
 from flask import Flask
 from flask import render_template
 from flask import request
-
+import os 
 
 # -- Initialization section --
 app = Flask(__name__)
@@ -13,5 +13,8 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
-    return "hello world"
-def zip10456 ():
+    return render_template("index.html")
+
+@app.route('/zipcode10456')
+def zipcode10456 ():
+    return render_template("zipcode10456.html")
