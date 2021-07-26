@@ -7,7 +7,7 @@ from flask import redirect
 import model
 from model import address
 # from model import donation
-print(donate)
+# print(donate)
 # -- Initialization section --
 app = Flask(__name__)
 
