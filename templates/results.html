@@ -38,8 +38,18 @@
   <div class = "content-section-a container">
       <!-- <h1>Hello {{ name }}</h1> -->
       <h1>The nearest donation centers to you are </h1>
-
-      <li>{{zip_code}}</li>
+      <div class = "row">
+                <div class = "coll">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/static/images/micropig.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{zip_code}}</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+      </div>
       <!-- <h1>Here are good wills near you</h1> -->
       <!-- <div class = "row">
           <img src = "{{image}}" width = 25%>

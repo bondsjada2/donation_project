@@ -26,7 +26,30 @@
     <h1>Welcome to the Donation Center!</h1>
     <h2>A universal hub for giving</h2>
     <h3>
-        Please enter your zip code below to be connected with donation centers near you
+        <div class = "container">
+            <!-- <div class = "row" ></div> -->
+            Please enter your zip code below to be connected with donation centers near you
+            <div class="content-section-a">
+                <form method="post" action="/results">
+                <input type="number" name="zipcode" placeholder="Enter your zip code" />
+                <input type="submit" value="Submit" />    
+    <!-- <input type="text" name="donation" placeholder="Enter your desired place of donation" />
+    <input type="submit" value="Submit" /> -->
+                </form>
+            </div>
+            <!-- <div class = "row">
+                <div class = "coll">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/static/images/micropig.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
     </h3>
             <!-- <hr class="intro-divider">
           </div>
@@ -36,14 +59,7 @@
     <!/.container -->
   <!-- </div> --> 
 
-  <div class="content-section-a">
-    <form method="post" action="/results">
-    <input type="number" name="zipcode" placeholder="Enter your zip code" />
-    <input type="submit" value="Submit" />    
-    <!-- <input type="text" name="donation" placeholder="Enter your desired place of donation" />
-    <input type="submit" value="Submit" /> -->
-    </form>
-  </div>
+  
   <!-- /.content-section-a -->
 
 </body>
