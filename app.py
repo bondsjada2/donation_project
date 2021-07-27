@@ -3,16 +3,11 @@
 from flask import Flask
 from flask import render_template
 from flask import request
-<<<<<<< HEAD
 from flask import redirect
-import model
-from model import address
+# import model
+# from model import address
 # from model import donation
 # print(donate)
-=======
-import os 
-
->>>>>>> 0a9349c4ca16d41c2c89dd5a2e6c1097b645eb1f
 # -- Initialization section --
 app = Flask(__name__)
 
@@ -28,10 +23,18 @@ def zip_code():
     if request.method == "POST":
         zipcode = request.form["zipcode"]
         print(zipcode)
-        zip_code = address(zipcode)
+        # zip_code = address(zipcode)
         print(zip_code)
         # good_will = donation(center)
         # print(good_will)
-        return render_template('results.html', zipcode = zipcode, zip_code = zip_code)
+        if int(zipcode) == 10456:
+            return render_template('results.html', zipcode = 10456)
+        if int(zipcode) == 29440:
+            return render_template('jada.html', zipcode = 29440)
+        if int(zipcode) == 10021:
+            return render_template('youshra.html', zipcode = 10021)
+        else:
+            return render_template('soon.html')
+        
     else:
         return "ERROR"

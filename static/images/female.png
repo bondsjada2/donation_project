@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head> <script type="text/javascript">if(!gform){document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0});var gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),null==t&&(t=10),gform.hooks[o][n].push({tag:i,callable:r,priority:t})},doHook:function(o,n,r){if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[o][n]){var t,i=gform.hooks[o][n];i.sort(function(o,n){return o.priority-n.priority});for(var e=0;e<i.length;e++)"function"!=typeof(t=i[e].callable)&&(t=window[t]),"action"==o?t.apply(null,r):r[0]=t.apply(null,r)}if("filter"==o)return r[0]},removeHook:function(o,n,r,t){if(null!=gform.hooks[o][n])for(var i=gform.hooks[o][n],e=i.length-1;0<=e;e--)null!=t&&t!=i[e].tag||null!=r&&r!=i[e].priority||i.splice(e,1)}}}</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Feminine Hygiene Products: What You Need to Know - Raleigh-OBGYN</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://www.raleighob.com/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="https://www.raleighob.com/wp-content/themes/raleigh-obgyn/js/html5.js"></script>
+	<![endif]-->
+    
+    <!-- JQUERY -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	
+    <!-- BOOTSTRAP -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- GOOGLE-FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    
+    <!-- SLICKSLIDER -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    
+    <!-- SCRIPTS -->
+    <script>
+        $( document ).ready(function() {
+            	$('.ig_action_bar').on('click' , function(){
+					console.log('click');
+		$('#header-navigation').toggleClass('active');
+	});
+            $('.btn-hamburger-icon').click(function(e){
+                $(this).toggleClass('is-active');
+                $('#nav-hamburger-menu').slideToggle();
+                e.preventDefault();
+            });
+            
+            $('.testimonials-wrap').slick({
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 300,
+                autoplay:true
+            });
+			
+			$('.providers-wrap').slick({
+                dots: true,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                speed: 300,
+                autoplay:true,
+				responsive: [
+				{
+				  breakpoint: 600,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true
+				}}		
+				]
+            });
+            
+            $('.inner-stars span').hover(function(){
+              $(this).removeClass('glyphicon-star-empty');
+              $(this).closest('li').prevAll('li').find('span').removeClass('glyphicon-star-empty');
+             }, function(){
+              $(this).addClass('glyphicon-star-empty');
+              $(this).closest('li').prevAll('li').find('span').addClass('glyphicon-star-empty');
+             });
+            
+            $('#btn-pregnancy-care').hover(function () {
+                $('#womens-healthcare-pregnancy h3').addClass('hover');
+                $('#womens-healthcare-pregnancy p').addClass('hover');
+                $('#womens-healthcare-pregnancy a').addClass('hover');
+            }, 
+            function () {
+                $('#womens-healthcare-pregnancy h3').removeClass('hover');
+                $('#womens-healthcare-pregnancy p').removeClass('hover');
+                $('#womens-healthcare-pregnancy a').removeClass('hover');
+            });
+            $('#btn-annual-checkups').hover(function () {
+                $('#womens-healthcare-annual-checkups h3').addClass('hover');
+                $('#womens-healthcare-annual-checkups p').addClass('hover');
+                $('#womens-healthcare-annual-checkups a').addClass('hover');
+            }, 
+            function () {
+                $('#womens-healthcare-annual-checkups h3').removeClass('hover');
+                $('#womens-healthcare-annual-checkups p').removeClass('hover');
+                $('#womens-healthcare-annual-checkups a').removeClass('hover');
+            });
+            $('#btn-minimally-invasive-surgery').hover(function () {
+                $('#womens-healthcare-minimally-invasive-surgery h3').addClass('hover');
+                $('#womens-healthcare-minimally-invasive-surgery p').addClass('hover');
+                $('#womens-healthcare-minimally-invasive-surgery a').addClass('hover');
+            }, 
+            function () {
+                $('#womens-healthcare-minimally-invasive-surgery h3').removeClass('hover');
+                $('#womens-healthcare-minimally-invasive-surgery p').removeClass('hover');
+                $('#womens-healthcare-minimally-invasive-surgery a').removeClass('hover');
+            });
+            $('#btn-family-planning').hover(function () {
+                $('#womens-healthcare-family-planning h3').addClass('hover');
+                $('#womens-healthcare-family-planning p').addClass('hover');
+                $('#womens-healthcare-family-planning a').addClass('hover');
+            }, 
+            function () {
+                $('#womens-healthcare-family-planning h3').removeClass('hover');
+                $('#womens-healthcare-family-planning p').removeClass('hover');
+                $('#womens-healthcare-family-planning a').removeClass('hover');
+            });
+            
+        });
+    </script>
+    <meta name="msvalidate.01" content="440AD2A4D1530E336A2D76C86B20C254" />
+    <meta name="google-site-verification" content="LVFNm8DlwfoKzNFDB4pUpQa7Uk9Y09SYPjTG36n0CRE" />
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v16.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="The options for feminine hygiene products have grown over the years. Here&#039;s what you need to know about your options:" />
+	<link rel="canonical" href="https://www.raleighob.com/feminine-hygiene-products/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Feminine Hygiene Products: What You Need to Know - Raleigh-OBGYN" />
+	<meta property="og:description" content="The options for feminine hygiene products have grown over the years. Here&#039;s what you need to know about your options:" />
+	<meta property="og:url" content="https://www.raleighob.com/feminine-hygiene-products/" />
+	<meta property="og:site_name" content="Raleigh-OBGYN" />
+	<meta property="article:published_time" content="2019-09-26T07:00:44+00:00" />
+	<meta property="article:modified_time" content="2019-09-26T16:20:56+00:00" />
+	<meta property="og:image" content="https://www.raleighob.com/wp-content/uploads/2019/09/AdobeStock_121922416-e1568427026836.jpeg" />
+	<meta property="og:image:width" content="700" />
+	<meta property="og:image:height" content="366" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="admin" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="6 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.raleighob.com/#website","url":"https://www.raleighob.com/","name":"Raleigh OB-GYN Center","description":"A commitment to care for over 40 years.","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.raleighob.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.raleighob.com/feminine-hygiene-products/#primaryimage","inLanguage":"en-US","url":"https://www.raleighob.com/wp-content/uploads/2019/09/AdobeStock_121922416-e1568427026836.jpeg","contentUrl":"https://www.raleighob.com/wp-content/uploads/2019/09/AdobeStock_121922416-e1568427026836.jpeg","width":700,"height":366,"caption":"Hygiene feminine pads, tampon menstruation in the beautician; blog: feminine hygiene products"},{"@type":"WebPage","@id":"https://www.raleighob.com/feminine-hygiene-products/#webpage","url":"https://www.raleighob.com/feminine-hygiene-products/","name":"Feminine Hygiene Products: What You Need to Know - Raleigh-OBGYN","isPartOf":{"@id":"https://www.raleighob.com/#website"},"primaryImageOfPage":{"@id":"https://www.raleighob.com/feminine-hygiene-products/#primaryimage"},"datePublished":"2019-09-26T07:00:44+00:00","dateModified":"2019-09-26T16:20:56+00:00","author":{"@id":"https://www.raleighob.com/#/schema/person/d853072d012f365efe58064cca2ec1e4"},"description":"The options for feminine hygiene products have grown over the years. Here's what you need to know about your options:","breadcrumb":{"@id":"https://www.raleighob.com/feminine-hygiene-products/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.raleighob.com/feminine-hygiene-products/"]}]},{"@type":"BreadcrumbList","@id":"https://www.raleighob.com/feminine-hygiene-products/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.raleighob.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.raleighob.com/blog/"},{"@type":"ListItem","position":3,"name":"Feminine Hygiene Products: What You Need to Know"}]},{"@type":"Person","@id":"https://www.raleighob.com/#/schema/person/d853072d012f365efe58064cca2ec1e4","name":"admin","image":{"@type":"ImageObject","@id":"https://www.raleighob.com/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/645077f7369949be940dcdaa185216dd?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/645077f7369949be940dcdaa185216dd?s=96&d=mm&r=g","caption":"admin"},"url":"https://www.raleighob.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Raleigh-OBGYN &raquo; Feed" href="https://www.raleighob.com/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.raleighob.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.raleighob.com/wp-includes/css/dist/block-library/style.min.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://www.raleighob.com/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.1.5' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='twentyfourteen-lato-css'  href='https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='https://www.raleighob.com/wp-content/themes/raleigh-obgyn/genericons/genericons.css?ver=3.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfourteen-style-css'  href='https://www.raleighob.com/wp-content/themes/raleigh-obgyn/style.css?ver=5.7.2' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfourteen-ie-css'  href='https://www.raleighob.com/wp-content/themes/raleigh-obgyn/css/ie.css?ver=20131205' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='https://www.raleighob.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.raleighob.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://www.raleighob.com/wp-content/plugins/revslider/public/assets/js/revolution.tools.min.js?ver=6.0' id='tp-tools-js'></script>
+<script type='text/javascript' src='https://www.raleighob.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.1.5' id='revmin-js'></script>
+<script type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=UA-113323814-1' id='google_gtagjs-js' async></script>
+<script type='text/javascript' id='google_gtagjs-js-after'>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["www.raleighob.com"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-113323814-1", {"anonymize_ip":true});
+</script>
+<link rel="https://api.w.org/" href="https://www.raleighob.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.raleighob.com/wp-json/wp/v2/posts/744" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.raleighob.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.raleighob.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7.2" />
+<link rel='shortlink' href='https://www.raleighob.com/?p=744' />
+<link rel="alternate" type="application/json+oembed" href="https://www.raleighob.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.raleighob.com%2Ffeminine-hygiene-products%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.raleighob.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.raleighob.com%2Ffeminine-hygiene-products%2F&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.36.0" /><!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '934629716965748');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=934629716965748&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113323814-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113323814-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Ads: 817000667 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-817000667"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-817000667');
+</script>
+<meta name="facebook-domain-verification" content="ru1snotzogsqp2gxvveodz1scg5817" />
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!-- Google Tag Manager added by Site Kit -->
+<script>
+( function( w, d, s, l, i ) {
+	w[l] = w[l] || [];
+	w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+	var f = d.getElementsByTagName( s )[0],
+		j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+	j.async = true;
+	j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+	f.parentNode.insertBefore( j, f );
+} )( window, document, 'script', 'dataLayer', 'GTM-MJXR68W' );
+</script>
+<!-- End Google Tag Manager -->
+		<meta name="generator" content="Powered by Slider Revolution 6.1.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://www.raleighob.com/wp-content/uploads/2020/05/Screenshot_16.png" sizes="32x32" />
+<link rel="icon" href="https://www.raleighob.com/wp-content/uploads/2020/05/Screenshot_16.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.raleighob.com/wp-content/uploads/2020/05/Screenshot_16.png" />
+<meta name="msapplication-TileImage" content="https://www.raleighob.com/wp-content/uploads/2020/05/Screenshot_16.png" />
+<script type="text/javascript">function setREVStartSize(t){try{var h,e=document.getElementById(t.c).parentNode.offsetWidth;if(e=0===e||isNaN(e)?window.innerWidth:e,t.tabw=void 0===t.tabw?0:parseInt(t.tabw),t.thumbw=void 0===t.thumbw?0:parseInt(t.thumbw),t.tabh=void 0===t.tabh?0:parseInt(t.tabh),t.thumbh=void 0===t.thumbh?0:parseInt(t.thumbh),t.tabhide=void 0===t.tabhide?0:parseInt(t.tabhide),t.thumbhide=void 0===t.thumbhide?0:parseInt(t.thumbhide),t.mh=void 0===t.mh||""==t.mh||"auto"===t.mh?0:parseInt(t.mh,0),"fullscreen"===t.layout||"fullscreen"===t.l)h=Math.max(t.mh,window.innerHeight);else{for(var i in t.gw=Array.isArray(t.gw)?t.gw:[t.gw],t.rl)void 0!==t.gw[i]&&0!==t.gw[i]||(t.gw[i]=t.gw[i-1]);for(var i in t.gh=void 0===t.el||""===t.el||Array.isArray(t.el)&&0==t.el.length?t.gh:t.el,t.gh=Array.isArray(t.gh)?t.gh:[t.gh],t.rl)void 0!==t.gh[i]&&0!==t.gh[i]||(t.gh[i]=t.gh[i-1]);var r,a=new Array(t.rl.length),n=0;for(var i in t.tabw=t.tabhide>=e?0:t.tabw,t.thumbw=t.thumbhide>=e?0:t.thumbw,t.tabh=t.tabhide>=e?0:t.tabh,t.thumbh=t.thumbhide>=e?0:t.thumbh,t.rl)a[i]=t.rl[i]<window.innerWidth?0:t.rl[i];for(var i in r=a[0],a)r>a[i]&&0<a[i]&&(r=a[i],n=i);var d=e>t.gw[n]+t.tabw+t.thumbw?1:(e-(t.tabw+t.thumbw))/t.gw[n];h=t.gh[n]*d+(t.tabh+t.thumbh)}void 0===window.rs_init_css&&(window.rs_init_css=document.head.appendChild(document.createElement("style"))),document.getElementById(t.c).height=h,window.rs_init_css.innerHTML+="#"+t.c+"_wrapper { height: "+h+"px }"}catch(t){console.log("Failure at Presize of Slider:"+t)}};</script>
+		<style type="text/css" id="wp-custom-css">
+			.copyright {
+	margin-top: 10px;
+}
+
+.footer-award {
+	max-width: 150px;
+	margin-bottom: 15px;
+}		</style>
+		<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="post-template-default single single-post postid-744 single-format-standard masthead-fixed full-width singular wpb-js-composer js-comp-ver-6.6.0 vc_responsive">
+
+<div id="page-wrap">
+   <div id="header">
+        <div class="container">
+            <div class="row">
+                <div id="logo" class="col-xs-12 col-md-4">
+                    <a href="https://www.raleighob.com"><img class="img-responsive" src="https://www.raleighob.com/wp-content/themes/raleigh-obgyn/images/logo.png"></a>
+                </div>
+                <div id="patient-portal" class="col-xs-6 col-md-2 col-md-offset-3 align-right">
+                    <a href="https://7773-29.portal.athenahealth.com/" class="btn-light-blue align-center" target="_blank">Patient Portal</a>
+                </div>
+                <div id="header-request-appointment" class="col-xs-6 col-md-3 align-right">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <a href="https://www.raleighob.com/request-an-appointment/"  class="btn-light-blue align-center">Request Appointment</a>
+                        </div>
+                    </div>
+                    <div class="row hidden-xs">
+                        <div class="col-xs-12 col-md-12">
+                            <div id="header-phone" class="col-xs-12 col-sm-9">
+                                <a href="tel:9198768225">919.876.8225</a>
+                                <p>Hablamos Espa&ntilde;ol</p>
+                            </div>
+                            <div id="header-social" class="col-xs-12 col-sm-3"><a class="header-facebook" href="https://www.facebook.com/Raleigh-Obgyn-Centre-892040170944932/" target="_blank">Join Us On Facebook</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+						<div class="row visible-xs">
+								<div class="col-xs-12">
+										<div id="header-phone" class="col-xs-12">
+                                            919.876.8225
+                                            <p>Hablamos Espanol</p>
+                                        </div>
+										<div id="header-social" class="col-xs-12"><a class="header-facebook" href="https://www.facebook.com/Raleigh-Obgyn-Centre-892040170944932/" target="_blank">Join Us On Facebook</a></div>
+								</div>
+						</div>
+        </div>
+    </div>
+	    <div class="" id="header-navigation">
+        <div id="desktop-menu">
+            <div class="menu-main-nav-container"><ul id="menu-main-nav" class="menu"><li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-28"><a href="https://www.raleighob.com/">Home</a></li>
+<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-27"><a href="https://www.raleighob.com/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327"><a href="https://www.raleighob.com/our-facilities/">Our Facilities</a></li>
+</ul>
+</li>
+<li id="menu-item-271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-271"><a href="https://www.raleighob.com/meet-our-providers/">Our Providers</a>
+<ul class="sub-menu">
+	<li id="menu-item-272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-272"><a href="https://www.raleighob.com/meet-our-providers/alan-b-segal-md/">Alan B. Segal, MD</a></li>
+	<li id="menu-item-273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-273"><a href="https://www.raleighob.com/meet-our-providers/brian-c-brimmage-md/">Brian C. Brimmage, MD</a></li>
+	<li id="menu-item-961" class="menu-item menu-item-type-post_type menu-item-object-provider menu-item-961"><a href="https://www.raleighob.com/provider/dr-murphy/">Brooke Murphy, MD</a></li>
+	<li id="menu-item-1101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1101"><a href="https://www.raleighob.com/meet-our-providers/camaryn-chrisman-robbins-md/">Camaryn Chrisman Robbins, MD</a></li>
+	<li id="menu-item-274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-274"><a href="https://www.raleighob.com/meet-our-providers/dawn-s-trollip-md/">Dawn S. Trollip, MD</a></li>
+	<li id="menu-item-275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-275"><a href="https://www.raleighob.com/meet-our-providers/jenifer-r-briscoe-md/">Jenifer R. Briscoe, MD</a></li>
+	<li id="menu-item-940" class="menu-item menu-item-type-post_type menu-item-object-provider menu-item-940"><a href="https://www.raleighob.com/provider/katoya-wright-fnp/">Katoya Wright, FNP</a></li>
+	<li id="menu-item-277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277"><a href="https://www.raleighob.com/meet-our-providers/kristin-l-allison-msn-fnp-bc-whnp-bc/">Kristin L. Allison, MSN, FNP-BC, WHNP-BC</a></li>
+</ul>
+</li>
+<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26"><a href="https://www.raleighob.com/for-patients/">For Patients</a>
+<ul class="sub-menu">
+	<li id="menu-item-212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-212"><a href="https://www.raleighob.com/insurance/">Insurance</a></li>
+	<li id="menu-item-213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213"><a href="https://www.raleighob.com/patient-forms/">Patient Forms</a></li>
+	<li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a href="https://www.raleighob.com/testimonials/">Testimonials</a></li>
+	<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-267"><a href="https://www.raleighob.com/blog/">Blog</a></li>
+	<li id="menu-item-268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="https://www.raleighob.com/request-an-appointment/">Request an Appointment</a></li>
+	<li id="menu-item-364" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-364"><a href="https://www.raleighob.com/patient-survey/">Patient Survey</a></li>
+</ul>
+</li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-25"><a href="https://www.raleighob.com/pregnancy/">Pregnancy</a>
+<ul class="sub-menu">
+	<li id="menu-item-844" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-844"><a href="https://www.raleighob.com/pregnancy/preconception-counseling/">Preconception Counseling</a></li>
+	<li id="menu-item-916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-916"><a href="https://www.raleighob.com/pregnancy/routine-prenatal-care/">Routine Prenatal Care</a></li>
+	<li id="menu-item-812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-812"><a href="https://www.raleighob.com/pregnancy/high-risk-obstetrics/">High-Risk Obstetrics</a></li>
+	<li id="menu-item-1015" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1015"><a href="https://www.raleighob.com/pregnancy/prenatal-genetic-screening/">Prenatal Genetic Screening</a></li>
+	<li id="menu-item-951" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-951"><a href="https://www.raleighob.com/pregnancy/fetal-non-stress-test/">Fetal Non-Stress Test (NST)</a></li>
+	<li id="menu-item-772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-772"><a href="https://www.raleighob.com/pregnancy/vaginal-birth-after-cesarean-vbac/">Vaginal Birth After Cesarean (VBAC)</a></li>
+	<li id="menu-item-300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-300"><a href="https://www.raleighob.com/frequently-asked-questions/">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24"><a href="https://www.raleighob.com/gynecology/">Gynecology</a>
+<ul class="sub-menu">
+	<li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="https://www.raleighob.com/family-planning/">Family Planning</a></li>
+	<li id="menu-item-1022" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1022"><a href="https://www.raleighob.com/gynecology/incontinence/">Incontinence</a></li>
+	<li id="menu-item-934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-934"><a href="https://www.raleighob.com/gynecology/laparoscopy-robotic-surgery/">Laparoscopy &#038; Robotic Surgery</a></li>
+	<li id="menu-item-790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-790"><a href="https://www.raleighob.com/gynecology/menopause/">Menopause</a></li>
+	<li id="menu-item-262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a href="https://www.raleighob.com/minimally-invasive-surgery/">Minimally Invasive Surgery</a></li>
+	<li id="menu-item-908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-908"><a href="https://www.raleighob.com/gynecology/pelvic-pain/">Pelvic Pain</a></li>
+	<li id="menu-item-797" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-797"><a href="https://www.raleighob.com/gynecology/pms-management/">PMS Management</a></li>
+	<li id="menu-item-974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-974"><a href="https://www.raleighob.com/gynecology/sexual-health/">Sexual Health</a></li>
+	<li id="menu-item-1032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1032"><a href="https://www.raleighob.com/gynecology/hysteroscopy/">Hysteroscopy</a></li>
+</ul>
+</li>
+<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-23"><a href="https://www.raleighob.com/contact-us/">Contact Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-899" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-899"><a href="https://www.raleighob.com/contact-us/covid-19-update/">Covid 19 Update</a></li>
+	<li id="menu-item-264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="https://www.raleighob.com/our-locations/">Our Locations</a></li>
+	<li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="https://www.raleighob.com/office-hours/">Office Hours</a></li>
+	<li id="menu-item-269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-269"><a href="https://www.raleighob.com/request-an-appointment/">Request an Appointment</a></li>
+</ul>
+</li>
+</ul></div>        </div>
+        <div id="mobile-menu">
+            <div id="btn-hamburger-menu">
+                <div id="btn-hamburger-text">MENU</div>
+                <button class="btn-hamburger-icon"><span></span></button> 
+            </div>
+            <div id="nav-hamburger-menu"><div class="menu-main-nav-container"><ul id="menu-main-nav-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-28"><a href="https://www.raleighob.com/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-27"><a href="https://www.raleighob.com/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327"><a href="https://www.raleighob.com/our-facilities/">Our Facilities</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-271"><a href="https://www.raleighob.com/meet-our-providers/">Our Providers</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-272"><a href="https://www.raleighob.com/meet-our-providers/alan-b-segal-md/">Alan B. Segal, MD</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-273"><a href="https://www.raleighob.com/meet-our-providers/brian-c-brimmage-md/">Brian C. Brimmage, MD</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-provider menu-item-961"><a href="https://www.raleighob.com/provider/dr-murphy/">Brooke Murphy, MD</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1101"><a href="https://www.raleighob.com/meet-our-providers/camaryn-chrisman-robbins-md/">Camaryn Chrisman Robbins, MD</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-274"><a href="https://www.raleighob.com/meet-our-providers/dawn-s-trollip-md/">Dawn S. Trollip, MD</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-275"><a href="https://www.raleighob.com/meet-our-providers/jenifer-r-briscoe-md/">Jenifer R. Briscoe, MD</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-provider menu-item-940"><a href="https://www.raleighob.com/provider/katoya-wright-fnp/">Katoya Wright, FNP</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277"><a href="https://www.raleighob.com/meet-our-providers/kristin-l-allison-msn-fnp-bc-whnp-bc/">Kristin L. Allison, MSN, FNP-BC, WHNP-BC</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26"><a href="https://www.raleighob.com/for-patients/">For Patients</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-212"><a href="https://www.raleighob.com/insurance/">Insurance</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213"><a href="https://www.raleighob.com/patient-forms/">Patient Forms</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a href="https://www.raleighob.com/testimonials/">Testimonials</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-267"><a href="https://www.raleighob.com/blog/">Blog</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="https://www.raleighob.com/request-an-appointment/">Request an Appointment</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-364"><a href="https://www.raleighob.com/patient-survey/">Patient Survey</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-25"><a href="https://www.raleighob.com/pregnancy/">Pregnancy</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-844"><a href="https://www.raleighob.com/pregnancy/preconception-counseling/">Preconception Counseling</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-916"><a href="https://www.raleighob.com/pregnancy/routine-prenatal-care/">Routine Prenatal Care</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-812"><a href="https://www.raleighob.com/pregnancy/high-risk-obstetrics/">High-Risk Obstetrics</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1015"><a href="https://www.raleighob.com/pregnancy/prenatal-genetic-screening/">Prenatal Genetic Screening</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-951"><a href="https://www.raleighob.com/pregnancy/fetal-non-stress-test/">Fetal Non-Stress Test (NST)</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-772"><a href="https://www.raleighob.com/pregnancy/vaginal-birth-after-cesarean-vbac/">Vaginal Birth After Cesarean (VBAC)</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-300"><a href="https://www.raleighob.com/frequently-asked-questions/">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24"><a href="https://www.raleighob.com/gynecology/">Gynecology</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="https://www.raleighob.com/family-planning/">Family Planning</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1022"><a href="https://www.raleighob.com/gynecology/incontinence/">Incontinence</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-934"><a href="https://www.raleighob.com/gynecology/laparoscopy-robotic-surgery/">Laparoscopy &#038; Robotic Surgery</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-790"><a href="https://www.raleighob.com/gynecology/menopause/">Menopause</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a href="https://www.raleighob.com/minimally-invasive-surgery/">Minimally Invasive Surgery</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-908"><a href="https://www.raleighob.com/gynecology/pelvic-pain/">Pelvic Pain</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-797"><a href="https://www.raleighob.com/gynecology/pms-management/">PMS Management</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-974"><a href="https://www.raleighob.com/gynecology/sexual-health/">Sexual Health</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1032"><a href="https://www.raleighob.com/gynecology/hysteroscopy/">Hysteroscopy</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-23"><a href="https://www.raleighob.com/contact-us/">Contact Us</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-899"><a href="https://www.raleighob.com/contact-us/covid-19-update/">Covid 19 Update</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="https://www.raleighob.com/our-locations/">Our Locations</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="https://www.raleighob.com/office-hours/">Office Hours</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-269"><a href="https://www.raleighob.com/request-an-appointment/">Request an Appointment</a></li>
+</ul>
+</li>
+</ul></div></div>
+        </div>
+    </div>
+
+    <div id="subpage-title-wrap">
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="subpage-entry-title">Blog</h1>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-7">
+                        
+<article id="post-744" class="post-744 post type-post status-publish format-standard has-post-thumbnail hentry category-blog">
+	<img width="700" height="366" src="https://www.raleighob.com/wp-content/uploads/2019/09/AdobeStock_121922416-e1568427026836.jpeg" class="attachment-full size-full wp-post-image" alt="Hygiene feminine pads, tampon menstruation in the beautician; blog: feminine hygiene products" loading="lazy" />
+	<header class="entry-header">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="https://www.raleighob.com/category/blog/" rel="category tag">Blog</a></span>
+		</div>
+		<h1 class="entry-title">Feminine Hygiene Products: What You Need to Know</h1>
+		<div class="entry-meta">
+			<span class="entry-date"><a href="https://www.raleighob.com/feminine-hygiene-products/" rel="bookmark"><time class="entry-date" datetime="2019-09-26T07:00:44+00:00">September 26, 2019</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="https://www.raleighob.com/author/admin/" rel="author">admin</a></span></span>		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<p><span style="font-weight: 400;">Feminine hygiene product options have grown over the years. Many women remember when disposable pads and tampons were the only options. Some may remember further back when there was no such thing as an applicator on a tampon and pads didn’t have adhesive. But things change.</span></p>
+<p><span style="font-weight: 400;">Whether you are reevaluating your hygiene needs or are helping a young person who is just entering her reproductive years decide which product is right for them, you might want to brush up on what is available. The</span><a href="https://youngwomenshealth.org/2013/03/28/period-products/"> <span style="font-weight: 400;">Center for Young Women’s Health</span></a><span style="font-weight: 400;"> aims to educate young women on issues affecting them, including menstrual hygiene but can be a useful resource if you’re curious about the ins and outs of the variety of feminine hygiene products available today.</span><span style="font-weight: 400;"> </span></p>
+<h3><span style="color: #70acc7;"><b>Menstrual Pads</b><span style="font-weight: 400;"> </span></span></h3>
+<p><span style="font-weight: 400;">Menstrual pads are placed in the underwear to catch and absorb blood once it leaves the vagina. Most pads do this with an adhesive that sticks to the underwear but can be peeled off easily for disposal. Menstrual pads are available in a wide range of sizes and lengths to accommodate different levels of menstrual flow and women of varying sizes. They can be very thin and referred to as a “panty liner” or thicker and more absorbent (sometimes called a “maxi pad”). Young girls just starting their menstrual cycles may feel more comfortable with an external menstrual pad rather than an internal product like a tampon.</span></p>
+<p><span style="font-weight: 400;">Traditional menstrual pads that you buy in drug and grocery stores are disposable and must be thrown away after use. This means they create a significant amount of waste, which makes them unpopular among some eco and/or health-conscious women. Additionally, we’re learning that the cotton and rayon used in most menstrual pads are bleached and may contain unknown chemicals. </span></p>
+<p><span style="font-weight: 400;">If you prefer external absorption over an internal product, there are options that are friendlier to your body and the environment. Natural, organic, and unbleached cotton pads have become more widely available in recent years.</span></p>
+<p><span style="font-weight: 400;">Another option is a reusable cotton pad that is used the same way as a regular pad but is washed and dried after each use to be reused later. The reusable pad usually has a liner to absorb the menstrual blood and a holder to attach it to underwear. The liner is washed by hand or in the machine so it can be used over and over. These pads also come in different sizes and absorbencies and are available with organic cotton. You can find options for reusable cotton pads online.</span></p>
+<h3><span style="color: #70acc7;"><b>Tampons</b><span style="font-weight: 400;"> </span></span></h3>
+<p><span style="font-weight: 400;">One of the most common and popular types of feminine hygiene products is the tampon. This internal hygiene product is inserted into the vagina to absorb menstrual blood. Some women prefer tampons to pads because the blood is absorbed internally, making less of a mess if changed with the right frequency. Many women also feel more comfortable exercising, playing sports, and swimming with an internal product like a tampon. Tampons are widely available in stores and some public bathrooms have dispensers that sell them, though this practice is declining.</span></p>
+<p><span style="font-weight: 400;">Tampons are usually made of cotton, rayon, or a combination. They can come with applicators to help with insertion or without an applicator which requires insertion using the fingers. Applicators can be made of plastic, cardboard, or other plant-based material. </span></p>
+<p><span style="font-weight: 400;">Tampons come in different sizes, or absorbencies, to accommodate different levels of menstrual flow. Like menstrual pads, tampons are disposable and should not be flushed down the toilet, especially in septic systems. Because they are single-use and disposable, they are not considered eco-friendly.</span></p>
+<p><span style="font-weight: 400;">There has been some concern, especially in recent years, expressed about chemicals present in tampons and their possible effects. Because the tampon is inserted into the vagina, concerns about exposure to unknown chemicals are even greater than with menstrual pads. Due to these increased concerns, there are many organic and unbleached tampons on the market. You can find natural and organic brands at larger supermarket chains, drug stores, natural food stores, and online. Some companies offer recurring subscription services so you can have the products sent to you each month so you won’t be caught without supplies when your period comes.</span></p>
+<p><span style="font-weight: 400;">It’s also important to note that there is an extremely small risk of a condition called</span><a href="https://www.mayoclinic.org/diseases-conditions/toxic-shock-syndrome/symptoms-causes/syc-20355384"> <span style="font-weight: 400;">toxic shock syndrome (TSS)</span></a><span style="font-weight: 400;"> when using tampons, but it is minimal.</span></p>
+<h3><span style="color: #70acc7;"><b>Menstrual Cups</b></span></h3>
+<p><span style="font-weight: 400;">Menstrual cups are a form of internal period products that are used in place of tampons. Rather than absorb blood like a tampon, a menstrual cup collects and contains menstrual blood to prevent it from exiting the vagina. To dispose of the blood, the user pulls on a tab to remove the cup and pour out the blood, usually into a toilet. A menstrual cup is usually made of medical-grade silicone or rubber safe for inserting into the vagina. The flexible material makes it possible for the cup to be folded and inserted.</span><span style="font-weight: 400;"> </span></p>
+<p><span style="font-weight: 400;">Most menstrual cups are reusable, meaning users can cleanse them between uses and keep them for many menstrual cycles before replacement is necessary. If you take proper care and cleanse them properly, they can last for years. This makes them an eco-friendly option for those looking for an alternative to tampons. Also, they are not linked to toxic shock syndrome (TSS) in the same way tampons are.</span><span style="font-weight: 400;"> </span></p>
+<p><span style="font-weight: 400;">There can be a learning curve when switching from disposable feminine hygiene products to the menstrual cup, but many women swear by them and say it is worth figuring out. The cups come in different sizes based on flow and whether you’ve given birth vaginally. Popular brands include the</span><a href="https://divacup.com/"> <span style="font-weight: 400;">DivaCup</span></a><span style="font-weight: 400;">,</span><a href="http://mooncup.com/"> <span style="font-weight: 400;">Moon Cup</span></a><span style="font-weight: 400;">, and</span><a href="https://menstrualcup.co/"> <span style="font-weight: 400;">many others</span></a><span style="font-weight: 400;">.</span></p>
+<h3><span style="color: #70acc7;"><b>Period Panties</b></span></h3>
+<p><span style="font-weight: 400;">A new alternative to disposable feminine hygiene products is the period panty. These specially made underwear are designed to absorb menstrual blood without the aid of a disposable cotton pad. The crotch of the panties is reinforced with four layers of material, which will absorb light or medium flows.</span><span style="font-weight: 400;"> </span></p>
+<p><span style="font-weight: 400;">Some women prefer to wear these in conjunction with a tampon rather than regular underwear with a safety panty liner and some women feel comfortable only wearing the underwear. The fabric is designed to be leak-proof, odor resistant, non-staining, and completely washable.</span><span style="font-weight: 400;"> </span></p>
+<p><span style="font-weight: 400;">One drawback to period panties is that they are costly, with the higher-rated brands being about $30 per pair. However, there are often deals or coupons you can use and because they are completely washable and reusable, they will eliminate waste and replace the disposable pads that you are currently buying.</span><span style="font-weight: 400;"> </span></p>
+<p><a href="https://www.shethinx.com/"><span style="font-weight: 400;">Thinx</span></a><span style="font-weight: 400;"> is the brand most commonly associated with period panties as they popularized the product, but versions from other companies like</span><a href="https://knix.com/collections/leakproof"> <span style="font-weight: 400;">Knix</span></a><span style="font-weight: 400;"> are also available.</span></p>
+<p>About Raleigh OB/GYN</p>
+<p><span style="font-weight: 400;">At Raleigh OB/GYN, we are happy to answer any questions you might have about your menstrual cycle, including which feminine hygiene products might be best and safest for you. We can be reached at 919-876-8225 or you can</span><a href="https://www.raleighob.com/request-an-appointment/"> <span style="font-weight: 400;">request an appointment online</span></a><span style="font-weight: 400;">.</span></p>
+	</div><!-- .entry-content -->
+	
+	</article><!-- #post-## -->
+	<nav class="navigation post-navigation" role="navigation">
+		<div class="nav-links">
+			<a href="https://www.raleighob.com/health-screenings-every-woman-should-get/" rel="prev"><span class="post-link-prev">&laquo; Previous Post</span></a><a href="https://www.raleighob.com/what-happens-if-my-baby-is-breech/" rel="next"><span class="post-link-next">Next Post &raquo;</span></a>		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	                    </div>
+                    <div class="col-xs-12 col-md-4 col-md-offset-1">
+                        <div class="row">
+    <div class="col-md-12">
+        <div id="subpage-sidebar">
+            <div id="sidebar-how-may-we-help-you">
+                <div class="subpage-sidebar-title">How can we help you?</div>
+                <div class="subpage-sidebar-menu">
+                    <div class="menu-sidebar-nav-container"><ul id="menu-sidebar-nav" class="menu"><li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134"><a href="https://www.raleighob.com/meet-our-providers/">Meet Our Providers</a></li>
+<li id="menu-item-136" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-136"><a href="https://www.raleighob.com/blog/">Our Blog</a></li>
+<li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="https://www.raleighob.com/patient-forms/">Patient Forms</a></li>
+<li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="https://www.raleighob.com/request-an-appointment/">Request an Appointment</a></li>
+</ul></div>                </div>
+            </div>
+            <div id="sidebar-testimonials">
+                <div class="subpage-sidebar-title">Testimonials</div>
+                <div class="subpage-sidebar-menu">
+                    
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-blurb"><p>“We moved to Raleigh 7 years ago from Nashville, TN, where I loved my OB. I was very nervous about finding someone I would trust just as easily. So blessed to have found Dr. Segal!  Not only is he very professional, he also really listens and doesn’t ignore anything you say. He’s for sure, the best of the best!”</p>
+</div>    
+                        <p class="testimonial-author">-J. Kelso</p>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-blurb"><p>&#8220;My daughter saw Dr. Trollip and this was one of the best experiences we have had at a doctors office. The staff is super friendly and very caring. Dr. Trollip was full of information and went above and beyond to make us feel comfortable. I highly recommend this office!&#8221;</p>
+</div>    
+                        <p class="testimonial-author">-J Hill</p>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-blurb"><p>&#8220;Wonderful experience and wonderful staff. Dr. Briscoe was amazing and made you feel welcomed and also listened to what you wanted out of your appointment. Highly recommend this office.&#8221;</p>
+</div>    
+                        <p class="testimonial-author">-H. Calegar</p>
+                    </div>
+                                        <a class="testimonial-readmore-link" href="https://www.raleighob.com/testimonials/">Read more testimonials >></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>                    </div>
+                </div>
+            </div>
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+    <div id="footer">
+                    <div id="request-appointment" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div id="request-appointment-inner">
+                            <h2>Request an Appointment</h2>
+                            <div class="req-appt-inner-text">Please note this is not a guaranteed appointment. Our office will contact you within 48 business hours. This form is not HIPAA compliant or intended for personal medical information.</div>
+                            <div><script type="text/javascript"></script>
+                <div class='gf_browser_chrome gform_wrapper gform_legacy_markup_wrapper' id='gform_wrapper_1' >
+                        <div class='gform_heading'>
+                            <h3 class="gform_title">Request an Appointment</h3>
+                            <span class='gform_description'></span>
+                        </div><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/feminine-hygiene-products/' >
+                        <div class='gform_body gform-body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id="field_1_3" class="gfield gf-full-width field_sublabel_below field_description_below gfield_visibility_visible" ><label class='gfield_label gfield_label_before_complex'  >Name</label><div class='ginput_complex ginput_container no_prefix has_first_name no_middle_name has_last_name no_suffix gf_name_has_2 ginput_container_name' id='input_1_3'>
+                            
+                            <span id='input_1_3_3_container' class='name_first' >
+                                                    <input type='text' name='input_3.3' id='input_1_3_3' value='' aria-label='First name'   aria-required='false'   placeholder='First Name'  />
+                                                    <label for='input_1_3_3' >First</label>
+                                                </span>
+                            
+                            <span id='input_1_3_6_container' class='name_last' >
+                                                    <input type='text' name='input_3.6' id='input_1_3_6' value='' aria-label='Last name'   aria-required='false'   placeholder='Last Name'  />
+                                                    <label for='input_1_3_6' >Last</label>
+                                                </span>
+                            
+                        </div></li><li id="field_1_4" class="gfield gf-width-half field_sublabel_below field_description_below gfield_visibility_visible" ><label class='gfield_label' for='input_1_4' >Email</label><div class='ginput_container ginput_container_email'>
+                            <input name='input_4' id='input_1_4' type='text' value='' class='large'   placeholder='Email'  aria-invalid="false"  />
+                        </div></li><li id="field_1_5" class="gfield gf-width-half field_sublabel_below field_description_below gfield_visibility_visible" ><label class='gfield_label' for='input_1_5' >Phone</label><div class='ginput_container ginput_container_phone'><input name='input_5' id='input_1_5' type='text' value='' class='large'  placeholder='Phone'  aria-invalid="false"   /></div></li><li id="field_1_6" class="gfield gf-width-full field_sublabel_below field_description_below gfield_visibility_visible" ><label class='gfield_label' for='input_1_6' >Message</label><div class='ginput_container ginput_container_textarea'><textarea name='input_6' id='input_1_6' class='textarea large'    placeholder='Message'  aria-invalid="false"   rows='10' cols='50'></textarea></div></li><li id="field_1_7" class="gfield gform_validation_container field_sublabel_below field_description_below gfield_visibility_visible" ><label class='gfield_label' for='input_1_7' >Comments</label><div class='ginput_container'><input name='input_7' id='input_1_7' type='text' value='' /></div><div class='gfield_description' id='gfield_description_1_7'>This field is for validation purposes and should be left unchanged.</div></li></ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Submit'  onclick='if(window["gf_submitting_1"]){return false;}  window["gf_submitting_1"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_1"]){return false;} window["gf_submitting_1"]=true;  jQuery("#gform_1").trigger("submit",[true]); }' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsImNkZDg3ZjE2NzY5ZTcwNmUwOWFjNjZkYzYwNjI3NDIzIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div id="location">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1T1e8T0hvjpog7YU-ekPEoKyPmEuUCsn8" width="100%" height="450"></iframe>
+                         <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.289437160028!2d-78.70319409836699!3d35.81737373000191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acf67fe9ea7c8d%3A0xb79a49b6d9b5ecbd!2sRaleigh+OB%2FGYN+Centre!5e0!3m2!1sen!2sus!4v1521229279730" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="background:rgba(202,190,89,.9);height:450px;">
+                        <div id="location-inner-right">
+                            <h3>Where are we located?</h3>
+                            <h4>Raleigh</h4>
+                            <p style="display:none;">Our office is conveniently located on the campus of Rex Healthcare in the Medical Plaza Building at:</p>
+                            <p style="font-weight:bold;font-size:16px;margin:20px 0;">4414 Lake Boone Trail  |  Suite 405  |  Raleigh, NC 27607</p>
+                            <p style="display:none;">Patients may utilize the Rex Hospital parking deck adjacent to the building.</p>
+                            <h4>Wakefield/Raleigh</h4>
+                            <p style="font-weight:bold;font-size:16px;margin:20px 0;">11009 Ingleside Place| Suite 301 | Raleigh, NC 27614</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom" class="section">
+            <div class="container">
+                <div class="col-md-1">
+                    <a class="footer-facebook" href="https://www.facebook.com/Raleigh-Obgyn-Centre-892040170944932/" target="_blank">Follow us on Facebook</a>
+                </div>
+                <div class="col-md-2">
+                    <h3>Contact</h3>
+                    <div>919.876.8225<br />919.876.3371 fax</div>
+                    <div>
+                        4414 Lake Boone Trail<br/>
+                        Suite 405<br/>
+                        Raleigh, NC, 27607
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <h3>Office Hours</h3>
+                    <p>
+                        <div>Monday through Thursday: 8:00am to 4:30pm</div>
+                        <div>Friday: 8:00am to 1:30pm</div>
+                    </p> 
+                    <p>One of our physicians is on call 24 hours a day to handle emergencies and deliveries.</p>
+                </div>
+                <div class="col-md-3 col-md-offset-2">
+                    <div id="footer-services">
+                        <a href="https://www.raleighob.com/pregnancy/">Pregnancy Care</a><br/>
+                        <a href="https://www.raleighob.com/minimally-invasive-surgery/">Minimally Invasive Surgery</a><br/>
+                        <a href="https://www.raleighob.com/family-planning/">Family Planning</a><br/>
+                        <a href="https://www.raleighob.com/gynecology/">Annual Checkup</a><br/>
+                    <a href="https://www.raleighob.com/wp-content/uploads/2020/09/Notice-of-Privacy-Practices-Document_NCCOM-019.00.a01.pdf">Notice of Privacy Practices</a><br/>
+                    </div>    
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="col-md-6 copyright-block">
+					<img class="footer-award" src="/wp-content/uploads/2021/01/Best-of-Raleigh-2020-Logo.png" alt="Raleigh's Best 2020 Winner">
+                    <p>&copy; 2021 Raleigh-OBGYN</p>
+                </div>
+                <div class="col-md-6 poweredby-block">
+					<a href="https://www.targetmarket.com/healthcare/" target="_blank"><img src="/wp-content/uploads/2021/03/tmhc-poweredby-white.png" alt="TargetMarket Healthcare" /></a>
+                </div>
+            </div>    
+        </div>
+     </div>
+</div>
+
+<!-- CallRail WordPress Integraton -->
+<script type="text/javascript">window.crwpVer = 2;</script><script type="text/javascript" src="/index.php?rest_route=/calltrk/swap.js"></script>
+
+<script>
+              (function(e){
+                  var el = document.createElement('script');
+                  el.setAttribute('data-account', 'dIYeqvMqOD');
+                  el.setAttribute('src', 'https://cdn.userway.org/widget.js');
+                  document.body.appendChild(el);
+                })();
+              </script>		<!-- Google Tag Manager (noscript) added by Site Kit -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJXR68W" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<link rel='stylesheet' id='gforms_reset_css-css'  href='https://www.raleighob.com/wp-content/plugins/gravityforms/legacy/css/formreset.min.css?ver=2.5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_formsmain_css-css'  href='https://www.raleighob.com/wp-content/plugins/gravityforms/legacy/css/formsmain.min.css?ver=2.5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_ready_class_css-css'  href='https://www.raleighob.com/wp-content/plugins/gravityforms/legacy/css/readyclass.min.css?ver=2.5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_browsers_css-css'  href='https://www.raleighob.com/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='akismet.css-css'  href='https://www.raleighob.com/wp-content/plugins/userway-accessibility-widget/assets/style.css?ver=5.7.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.raleighob.com/wp-content/themes/raleigh-obgyn/js/functions.js?ver=20150315' id='twentyfourteen-script-js'></script>
+<script type='text/javascript' src='https://www.raleighob.com/wp-includes/js/wp-embed.min.js?ver=5.7.2' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://www.raleighob.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://www.raleighob.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://www.raleighob.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://www.raleighob.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://www.raleighob.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://www.raleighob.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://www.raleighob.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="https://www.raleighob.com/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' src='https://www.raleighob.com/wp-includes/js/dist/dom-ready.min.js?ver=eb19f7980f0268577acb5c2da5457de3' id='wp-dom-ready-js'></script>
+<script type='text/javascript' src='https://www.raleighob.com/wp-includes/js/dist/hooks.min.js?ver=50e23bed88bcb9e6e14023e9961698c1' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://www.raleighob.com/wp-includes/js/dist/i18n.min.js?ver=db9a9a37da262883343e941c3731bc67' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' id='wp-a11y-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type='text/javascript' src='https://www.raleighob.com/wp-includes/js/dist/a11y.min.js?ver=5e00de7a43b31bbb9eaf685f089a3903' id='wp-a11y-js'></script>
+<script type='text/javascript' defer='defer' src='https://www.raleighob.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.5.7' id='gform_json-js'></script>
+<script type='text/javascript' id='gform_gravityforms-js-extra'>
+/* <![CDATA[ */
+var gform_i18n = {"datepicker":{"days":{"monday":"Mon","tuesday":"Tue","wednesday":"Wed","thursday":"Thu","friday":"Fri","saturday":"Sat","sunday":"Sun"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"}}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/www.raleighob.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.raleighob.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gf_legacy_multi = {"1":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' defer='defer' src='https://www.raleighob.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.5.7' id='gform_gravityforms-js'></script>
+<script type='text/javascript' defer='defer' src='https://www.raleighob.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=2.5.7' id='gform_masked_input-js'></script>
+<script type='text/javascript' defer='defer' src='https://www.raleighob.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.5.7' id='gform_placeholder-js'></script>
+<script type='text/javascript'> gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }jQuery('#input_1_5').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );</script><script type='text/javascript'> gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script></body>
+</html>
