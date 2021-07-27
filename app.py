@@ -33,6 +33,8 @@ def zip_code():
             return render_template('jada.html', zipcode = 29440)
         if int(zipcode) == 10021:
             return render_template('youshra.html', zipcode = 10021)
+        if int(zipcode) == 11101:
+            return render_template('island.html', zipcode = 11101)
         else:
             return render_template('soon.html')
         
