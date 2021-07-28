@@ -8,6 +8,9 @@ from flask import redirect
 # from model import address
 # from model import donation
 # print(donate)
+
+import os 
+
 # -- Initialization section --
 app = Flask(__name__)
 
