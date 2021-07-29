@@ -46,7 +46,6 @@ def zip_code():
         if int(zipcode) == 11237:
             return render_template('brook.html', zipcode = 11237, time = datetime.now())
         else:
-            return render_template('soon.html', time = datetime.now())
-  #11237      
+            return render_template('soon.html', time = datetime.now())    
     else:
         return "ERROR"
