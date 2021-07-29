@@ -22,6 +22,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html', time = datetime.now())
 
+@app.route('/why')
+def why():
+    return render_template('why.html', time = datetime.now())
+
 @app.route('/results', methods = ['GET', 'POST'])
 def zip_code():
     if request.method == "POST":
